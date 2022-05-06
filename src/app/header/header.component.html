@@ -1,0 +1,16 @@
+<div class="header-wrapper">
+  <div class="header">
+    <div>
+      <a [ngStyle]="{ color: 'white' }" appHighlight>Book Catalog</a>
+    </div>
+    <div>
+      <input
+        class="search-bar"
+        type="text"
+        #item
+        (keydown.enter)="searchItem(item.value)"
+      />
+      🔍
+    </div>
+  </div>
+</div>

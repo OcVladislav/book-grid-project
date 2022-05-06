@@ -1,0 +1,23 @@
+.header-wrapper {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYBFAwpY4k_v4x-yA_iXsOt_eCMAza_z1CCA&usqp=CAU);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  a {
+    font-size: 40px;
+    font-style: italic;
+  }
+  .search-bar {
+    outline: none;
+    border: 2px solid black;
+  }
+}

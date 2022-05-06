@@ -1,0 +1,7 @@
+<div class="app-book">
+  <app-header (newItemEvent)="filterItem($event)"></app-header>
+  <div class="content">
+    <app-body></app-body>
+    <app-cards [books]="books"></app-cards>
+  </div>
+</div>

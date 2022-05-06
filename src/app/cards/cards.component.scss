@@ -1,0 +1,60 @@
+.book-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.then-block {
+  font-size: 20px;
+}
+
+.book-card {
+  width: 300px;
+  height: 500px;
+  padding: 0 20px;
+  border-radius: 5px;
+  margin: 20px;
+  background: url(https://i.pinimg.com/originals/91/2e/c5/912ec5ee4f20738df0454ce6b5bc23b7.jpg);
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+
+  border-radius: 5px;
+}
+
+.front,
+.back {
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  background-color: transparent;
+  font-size: 12px;
+  text-align: center;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:hover .back {
+  transform: rotateY(360deg);
+}
+
+.crad-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

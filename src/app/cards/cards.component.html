@@ -1,0 +1,22 @@
+<div class="book-card-container">
+  <div class="then-block" *ngIf="!books.length">Ничего не найдено</div>
+  <div class="book-card" *ngFor="let book of books">
+    <div class="card">
+      <div class="front">
+        <img src="{{ book.image }}" alt="#" width="200px" height="300px" />
+      </div>
+      <div class="back">
+        <span>{{ book.summary }}</span>
+      </div>
+    </div>
+    <div class="crad-footer">
+      <div class="auth-title">
+        <div [ngStyle]="{ fontWeight: 'bold', marginBottom: '10px' }">
+          {{ book.title }}
+        </div>
+        <div>{{ book.author | uppercase }}</div>
+      </div>
+      <div>{{ book.price.displayValue + " " + book.price.currency }}</div>
+    </div>
+  </div>
+</div>
